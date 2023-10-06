@@ -1,0 +1,34 @@
+{
+  "name": "chs_notquests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gitbook serve",
+    "build": "gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:aikinisama/notquests-chs.git"
+  },
+  "author": "Aikini",
+  "license": "ISC",
+  "dependencies": {
+    "gitbook-plugin-auto-scroll-table": "0.0.5",
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-chapter-fold": "0.0.4",
+    "gitbook-plugin-code": "^0.1.0",
+    "gitbook-plugin-code-pro": "^0.1.1",
+    "gitbook-plugin-copy-code-button": "0.0.2",
+    "gitbook-plugin-custom-favicon": "0.0.4",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-flexible-alerts": "^1.0.4",
+    "gitbook-plugin-hide-element": "0.0.4",
+    "gitbook-plugin-lightbox": "^1.2.0",
+    "gitbook-plugin-prism": "^2.4.0",
+    "gitbook-plugin-search-pro-fixed": "^1.0.1",
+    "gitbook-plugin-tbfed-pagefooter": "0.0.1",
+    "gitbook-plugin-theme-hqbook": "^1.1.0"
+  }
+}
