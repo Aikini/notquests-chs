@@ -17,11 +17,11 @@
 + 要么读完这篇教程  
 + 要么看我们的[视频](https://www.youtube.com/watch?v=OC45_H3Tv8Y)（油管链接，别急，我还没做）。注意，这个视频教程里的NotQuests是v3版本，有些命令可能不一样。  
 
-# 结构
-在NotQuests里，一项任务是由各种不同的的属性构成的。例如：
+# 任务结构
+在NotQuests里，一项任务是由多个不同的内容构成的。例如：
 + **displayName**（显示名称）：玩家所能看见的任务名称。
 + **description**（描述）：任务描述。
-+ **limits**（限制）：该任务玩家能接取、完成或失利的最大次数。
++ **limits**（限制）：该任务玩家能接取、完成或失败的最大次数。
 + 等等……  
 除此之外，你还可以将下面这些附加进任务中：
 + **Objectives**（目标）：设定一些“玩家需要去做的事情”作为目标。一旦这些事情全部做完，任务就会完成。
@@ -83,14 +83,14 @@
 目标是每个任务的核心组成部分。那我们来添加第一个目标吧！  
 首先，玩家需要清理被僵尸堵塞的道路：  
 ```/qa edit TheVirus objectives add BreakBlocks dirt 64```  
-当完成破坏64个泥土这一目标时即该目标👍如果你想，你还可以在这里指定多种方块。  
+当玩家破坏完64个泥土时，该目标即达成👍如果你想，你还可以在这里指定多种方块作为任务目标。  
 比如，如果你想将玩家破坏的方块指定为泥土或石头，就需要输入```dirt,stone```。  
 现在，我们给我们的目标添加一条描述：*被感染的僵尸在街上拉屎了！你需要通过破坏64个泥土才能清理干净！*  
 ```/qa edit TheVirus objectives edit 1 description set The infected Zombies shat on the street. Clean it up by breaking 64 dirt blocks!```  
-再设定目标的显示名称：*臭街*  
+再设定目标的显示名称：*Stinky Street*  
 ```/qa edit TheVirus objectives edit 1 displayName set Stinky Street```  
 然后就可以用命令```/q take TheVirus```接取我们的任务了！  
-<div align=center><img src="/pic/getting-started/after-accepting-with-first-objective.png" alt="目标：1.臭街：描述：被感染的僵尸在街上拉屎了！你需要通过破坏64个泥土才能清理干净！  破坏方块：泥土  进度：0/64  任务描述：一个死亡病毒感染了临冬城的居民。你必须物理净化掉这些被感染的村民，从而阻止病毒的继续传播。  
+<div align=center><img src="/pic/getting-started/after-accepting-with-first-objective.png" alt="目标：1.Stinky Street：描述：被感染的僵尸在街上拉屎了！你需要通过破坏64个泥土才能清理干净！  破坏方块：泥土  进度：0/64  任务描述：一个死亡病毒感染了临冬城的居民。你必须物理净化掉这些被感染的村民，从而阻止病毒的继续传播。  
 [任务已接受]  
 一个死亡病毒"> "></div>  
 
